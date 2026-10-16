@@ -7,7 +7,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.assignmentweek4.soal1.Soal1View
-import com.example.assignmentweek4.soal2.Soal2View
 import com.example.assignmentweek4.ui.theme.AssignmentWeek4Theme
 
 class MainActivity : ComponentActivity() {
@@ -16,7 +15,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             AssignmentWeek4Theme {
-                Soal2View()
+                Soal1View()
             }
         }
     }
