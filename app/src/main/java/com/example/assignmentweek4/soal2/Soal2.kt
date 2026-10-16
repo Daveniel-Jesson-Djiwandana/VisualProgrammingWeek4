@@ -501,7 +501,7 @@ fun Soal2View() {
                                 Triple("HP", hero.hp to hero.maxHp, Color(0xFFFF4D4D)),
                                 Triple("MP", hero.mp to hero.maxMp, Color(0xFF1E88E5))
                             ).forEach { (label, value, barColor) ->
-                                val (current, max) = value
+                                val (sekarang, max) = value
                                 Row(
                                     modifier = Modifier.padding(vertical = 3.dp),
                                     verticalAlignment = Alignment.CenterVertically
@@ -522,14 +522,14 @@ fun Soal2View() {
                                     ) {
                                         Box(
                                             modifier = Modifier
-                                                .fillMaxWidth(current.toFloat() / max.toFloat())
+                                                .fillMaxWidth(sekarang.toFloat() / max.toFloat())
                                                 .fillMaxHeight()
                                                 .clip(CircleShape)
                                                 .background(barColor)
                                         )
                                     }
                                     Text(
-                                        text = "$current / $max",
+                                        text = "$sekarang / $max",
                                         color = Color(0xFFCFCFE6),
                                         fontSize = 12.sp,
                                         textAlign = TextAlign.End,
